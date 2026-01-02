@@ -529,16 +529,34 @@ button:hover {
 
 
 /* ACHIEVEMENTS */
-#achievements li{
+#achievements {
+    padding: 0;
+}
+
+#achievements li {
     list-style: none;
     color: #fff8f8;
     font-weight: 600;
-    background: #eb94ce73;
-    margin: 10px auto;
+    background: #ce46a173;
+    margin: 15px auto;
     padding: 15px;
     width: 70%;
     border-radius: 12px;
+    text-align: center;
+
+    /* Smooth animation */
+    transition: all 0.3s ease-in-out;
 }
+
+/* Hover Effect */
+#achievements li:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px #eb94ce,
+                0 0 40px #eb94ce;
+    background: #b14f90e0;
+    cursor: pointer;
+}
+
 
 
 
